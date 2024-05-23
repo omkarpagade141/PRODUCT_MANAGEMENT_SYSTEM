@@ -34,7 +34,7 @@ public class AddProductServlet extends HttpServlet {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // Establish connection to the database
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/productmanagesystem", "root", "Supriya");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_name", "root", "db_password");
 
             // SQL query to insert data into the Products table
             String sql = "INSERT INTO Products (productId, productName, productPrice, productCompany) VALUES (?, ?, ?, ?)";

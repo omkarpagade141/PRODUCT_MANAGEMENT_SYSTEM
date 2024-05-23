@@ -34,7 +34,7 @@ public class UpdateProductServlet extends HttpServlet {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // Establish connection to the database
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/productmanagesystem", "root", "Supriya");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_name", "root", "db_password");
 
             // SQL query to update the product details
             String sql = "UPDATE Products SET productName = ?, productPrice = ?, productCompany = ? WHERE productId = ?";
